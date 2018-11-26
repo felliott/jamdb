@@ -5,7 +5,7 @@ docopt==0.6.2
 elasticsearch-dsl==0.0.9
 elasticsearch==1.7.0
 furl==0.4.8
-jsonpatch==1.12
+jsonpatch==1.23
 jsonschema==2.5.0
 pyjwt==1.4.0
 pymongo==3.4.0

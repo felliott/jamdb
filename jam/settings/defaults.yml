@@ -3,7 +3,7 @@ DEBUG: false
 # SERVER SETTINGS
 FORK: false  # Maybe true, false or intger
 PORT: 1212
-HOST: localhost
+HOST: 0.0.0.0
 XHEADERS: False
 SENTRY_DSN: null
 
@@ -18,12 +18,12 @@ MONGO:
   USE: true
   DATABASE_NAME: jam
   TIMEOUT: 30
-  URI: mongodb://localhost:27017/
+  URI: mongodb://192.168.168.167:27017/
 
 ELASTICSEARCH:
   USE: true
   TIMEOUT: 30
-  URI: http://localhost:9200/
+  URI: https://192.168.168.167:9200/
 
 NAMESPACE_BACKENDS:
   state: mongo

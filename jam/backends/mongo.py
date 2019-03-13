@@ -1,5 +1,4 @@
 import re
-import ssl
 
 import ujson as json
 from pymongo import MongoClient
@@ -23,9 +22,7 @@ class MongoBackend(Backend):
     DEFAULT_CONNECTION = MongoClient(
         settings.MONGO['URI'],
         connect=False,
-        ssl=True,
         serverselectiontimeoutms=settings.MONGO['TIMEOUT'] * 1000,
-        ssl_cert_reqs=ssl.CERT_NONE
     )
 
     @classmethod

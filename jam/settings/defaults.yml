@@ -23,7 +23,7 @@ MONGO:
 ELASTICSEARCH:
   USE: true
   TIMEOUT: 30
-  URI: https://192.168.168.167:9200/
+  URI: http://192.168.168.167:9200/
 
 NAMESPACE_BACKENDS:
   state: mongo
